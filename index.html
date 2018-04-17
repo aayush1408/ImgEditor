@@ -3,13 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CartoonIt</title>
+    <title>FilterIt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
     <center>
-        <button onclick="openCam()">Open camera</button>        
+        <button onclick="openCam()">Open camera</button>     
+        <button onclick="stopCam()">Close camera</button>           
         <video id="video" width="640" height="480" autoplay style="display:none"></video>
         <button onclick="takePhoto()">Click the photo</button>
         <img /> 
@@ -28,5 +30,6 @@
     <button onclick="tint()">Tint</button> 
     </center>     
     <script src="main.js"></script>    
+    <script src="filter.js"></script>
 </body>
 </html>
