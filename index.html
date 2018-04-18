@@ -5,30 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FilterIt</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
+<nav>
+    <div class="nav-wrapper" style="background-color:black">
+        <a href="#" class="brand-logo right">FilterIt</a>
+        <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a onclick="openCam()">Open Cam</a></li>
+            <li><a onclick="stopCam()">Close Cam</a></li>
+        </ul>
+    </div>
+</nav>
+  
+<ul class="collection" style="float:left;">
+    <li class="collection-item" onclick="gray()">Grayscale</li>
+    <li class="collection-item" onclick="sepia()">Sepia</li>
+    <li class="collection-item" onclick="saturate()">Saturate</li>
+    <li class="collection-item" onclick="contrast()">Contrast</li>
+    <li class="collection-item" onclick="opacity()">Opacity</li>
+    <li class="collection-item" onclick="brightness()">Brgihtness</li>
+    <li class="collection-item" onclick="shadow()">Shadow</li>
+    <li class="collection-item" onclick="invert()">Invert</li>
+    <li class="collection-item" onclick="rotate()">Rotate</li>
+    <li class="collection-item" onclick="multiple()">Sushine</li>
+    <li class="collection-item" onclick="tint()">Tint</li>
+</ul>
+    <div>
+        <video id="video" width="540" height="480" autoplay style="display:none;float:right;"></video>
+        <img width="540"/ style="float:left;">
+      </div>
     <center>
-        <button onclick="openCam()">Open camera</button>     
-        <button onclick="stopCam()">Close camera</button>           
-        <video id="video" width="640" height="480" autoplay style="display:none"></video>
-        <button onclick="takePhoto()">Click the photo</button>
-        <img /> 
-        </center>  
-        <center>     
-    <button onclick="gray()">Grayscale</button>
-    <button onclick="sepia()">Sepia</button>
-    <button onclick="saturate()">Saturate</button>    
-    <button onclick="contrast()">Contrast</button>
-    <button onclick="opacity()">Opacity</button>
-    <button onclick="brightness()">Brightness</button>
-    <button onclick="shadow()">Shadow</button>
-    <button onclick="invert()">Invert</button>
-    <button onclick="rotate()">Rotate</button>
-    <button onclick="multiple()">Sunshine</button>    
-    <button onclick="tint()">Tint</button> 
-    </center>     
+        <button onclick="takePhoto()" class="btn">Click it</button>
+    </center>    
+     
+  
     <script src="main.js"></script>    
     <script src="filter.js"></script>
 </body>

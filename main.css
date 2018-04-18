@@ -7,5 +7,16 @@
 img{
         transform: rotateY(180deg);
         -webkit-transform:rotateY(180deg); /* Safari and Chrome */
-        -moz-transform:rotateY(180deg); /* Firefox */    
+        -moz-transform:rotateY(180deg); /* Firefox */  
+        margin-top: 40px;
+        margin-left: 20px;
+}
+ul{
+    background-color: black;
+}
+button{
+    background-color: black;
+}
+li{
+    cursor: pointer;
 }
