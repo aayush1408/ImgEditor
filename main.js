@@ -1,7 +1,8 @@
 const img = document.querySelector('img');
 const video = document.querySelector('video');
 const file = document.querySelector('input');
-
+const download = document.getElementById('download');
+console.log(download);
 function openCam() {
     video.style.display = "block";
     navigator.getUserMedia({ video: true }, function (stream) {
@@ -32,6 +33,8 @@ function takePhoto() {
             console
             let url = window.URL;
             img.src = url.createObjectURL(blob);
+            download.href = img.src;
+            console.log(download);
             url.revokeObjectURL(blob);
         })
         .catch((error) => {

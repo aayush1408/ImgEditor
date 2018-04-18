@@ -3,6 +3,7 @@
     transform: rotateY(180deg);
     -webkit-transform:rotateY(180deg); /* Safari and Chrome */
     -moz-transform:rotateY(180deg); /* Firefox */
+    margin-right: 20px;
 }
 img{
         transform: rotateY(180deg);
@@ -17,10 +18,12 @@ button{
 li{
     cursor: pointer;
     font-family: cursive;
+    font-style: italic;
 }
 body{
     background-color:snow
 }
 .brand-logo{
     font-family: cursive;
+    font-style:italic;
 }
