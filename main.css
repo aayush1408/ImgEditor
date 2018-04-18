@@ -11,12 +11,16 @@ img{
         margin-top: 40px;
         margin-left: 20px;
 }
-ul{
-    background-color: black;
-}
 button{
     background-color: black;
 }
 li{
     cursor: pointer;
+    font-family: cursive;
+}
+body{
+    background-color:snow
+}
+.brand-logo{
+    font-family: cursive;
 }
