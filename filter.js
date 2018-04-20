@@ -1,4 +1,3 @@
-
 function gray() {
     console.log(img.style);
     img.style.filter = "grayscale(30%)";

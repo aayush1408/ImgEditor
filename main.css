@@ -4,6 +4,8 @@
     -webkit-transform:rotateY(180deg); /* Safari and Chrome */
     -moz-transform:rotateY(180deg); /* Firefox */
     margin-right: 20px;
+    float: right;
+    display: none;
 }
 img{
         transform: rotateY(180deg);
@@ -11,14 +13,16 @@ img{
         -moz-transform:rotateY(180deg); /* Firefox */  
         margin-top: 40px;
         margin-left: 20px;
+        float: left;
 }
 button{
     background-color: black;
 }
-li{
+.li{
     cursor: pointer;
     font-family: cursive;
     font-style: italic;
+    background-color: yellow
 }
 body{
     background-color:snow
@@ -26,4 +30,7 @@ body{
 .brand-logo{
     font-family: cursive;
     font-style:italic;
+}
+.nav-wrapper{
+    background-color: ghostwhite;
 }

@@ -2,7 +2,7 @@ const img = document.querySelector('img');
 const video = document.querySelector('video');
 const file = document.querySelector('input');
 const download = document.getElementById('download');
-console.log(download);
+
 function openCam() {
     video.style.display = "block";
     navigator.getUserMedia({ video: true }, function (stream) {
@@ -27,6 +27,7 @@ function stopCam() {
             console.log('getUserMedia() error', error);
         });
 }
+
 function takePhoto() {
     imageCapture.takePhoto()
         .then(blob => {

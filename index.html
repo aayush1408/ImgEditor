@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
 <nav>
-    <div class="nav-wrapper" style="background-color:black">
+    <div class="nav-wrapper">
         <a href="#" class="brand-logo right">FilterIt</a>
         <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li><a onclick="openCam()">Open Cam</a></li>
@@ -20,30 +19,25 @@
         </ul>
     </div>
 </nav>
-  
 <ul class="collection filters" style="float:left;">
-    <li class="collection-item active" onclick="takePhoto()" style="color:white;background-color:black;"class="btn">Click It</li> 
-    <li class="collection-item" onclick="gray()" style="color:white;background-color:black;">Grayscale</li>
-    <li class="collection-item" onclick="sepia()" style="color:white;background-color:black;">Sepia</li>
-    <li class="collection-item" onclick="saturate()" style="color:white;background-color:black;">Saturate</li>
-    <li class="collection-item" onclick="contrast()" style="color:white;background-color:black;">Contrast</li>
-    <li class="collection-item" onclick="opacity()" style="color:white;background-color:black;">Opacity</li>
-    <li class="collection-item" onclick="brightness()"style="color:white;background-color:black;">Brgihtness</li>
-    <li class="collection-item" onclick="shadow()"style="color:white;background-color:black;">Shadow</li>
-    <li class="collection-item" onclick="invert()" style="color:white;background-color:black;">Invert</li>
-    <li class="collection-item" onclick="rotate()" style="color:white;background-color:black;">Rotate</li>
-    <li class="collection-item" onclick="multiple()" style="color:white;background-color:black;">Sushine</li>
-    <li class="collection-item" onclick="tint()" style="color:white;background-color:black;">Tint</li>
+    <li class="collection-item active" onclick="takePhoto()"class="btn">Click It</li> 
+    <li class="collection-item" onclick="gray()" >Grayscale</li>
+    <li class="collection-item" onclick="sepia()" >Sepia</li>
+    <li class="collection-item" onclick="saturate()" >Saturate</li>
+    <li class="collection-item" onclick="contrast()">Contrast</li>
+    <li class="collection-item" onclick="opacity()">Opacity</li>
+    <li class="collection-item" onclick="brightness()">Brgihtness</li>
+    <li class="collection-item" onclick="shadow()">Shadow</li>
+    <li class="collection-item" onclick="invert()">Invert</li>
+    <li class="collection-item" onclick="rotate()">Rotate</li>
+    <li class="collection-item" onclick="multiple()">Sushine</li>
+    <li class="collection-item" onclick="tint()">Tint</li>
 </ul>
     <div>
-        <video id="video" width="540" height="480" style="display:none;float:right;" autoplay></video>
-        <img src="/spongebo.jpg" width="540" style="float:left;">
-      </div>
-    <center>
-        
-    </center>    
-     
-  
+        <video id="video" width="540" height="480" autoplay></video>
+        <img src="/spongebo.jpg" width="540" >
+      </div> 
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />    
     <script src="main.js"></script>    
     <script src="filter.js"></script>
 </body>
