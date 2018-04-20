@@ -18,11 +18,10 @@ img{
 button{
     background-color: black;
 }
-.li{
+li{
     cursor: pointer;
     font-family: cursive;
     font-style: italic;
-    background-color: yellow
 }
 body{
     background-color:snow
@@ -32,5 +31,5 @@ body{
     font-style:italic;
 }
 .nav-wrapper{
-    background-color: ghostwhite;
+    background-color: darkseagreen;
 }
